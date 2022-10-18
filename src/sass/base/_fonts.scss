@@ -1,0 +1,27 @@
+@font-face {
+    font-family: RobotoCondensed;
+    src: url("../fonts/roboto-condensed/RobotoCondensed-Regular.ttf");
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/gilroy/Gilroy-Regular.woff") format("woff"),
+        url("../fonts/gilroy/Gilroy-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/gilroy/Gilroy-Semibold.woff") format("woff"),
+        url("../fonts/gilroy/Gilroy-Semibold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap);
+}

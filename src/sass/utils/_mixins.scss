@@ -1,0 +1,21 @@
+@mixin centered-flex($type: flex, $align-items: center, $justify-content: center) {
+    display: $type;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+@mixin font-style($weight, $size, $line-height) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line-height;
+}
+
+@mixin section-paddings($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+
+}
+@mixin container-paddings ($left, $right) {
+    padding-left: $left;
+    padding-right: $right;
+}

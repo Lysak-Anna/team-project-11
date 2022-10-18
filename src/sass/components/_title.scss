@@ -1,0 +1,14 @@
+.title {
+text-transform: uppercase;
+color: $titles-color;
+letter-spacing: 0.02em;
+@include font-style(600, 24px, 1.2);
+@media screen and (min-width: $tablet) {
+    @include font-style(600, 30px, 1.2);
+}
+@media screen and (min-width: $desctop) {
+    @include font-style(600, 54px, 1.2);
+}
+}
+
+

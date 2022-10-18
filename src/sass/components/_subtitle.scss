@@ -1,0 +1,7 @@
+.subtitle {
+    @include font-style (600, 20px, 1.25);
+    color: $titles-color;
+    @media screen and (min-width: $desctop) {
+        @include font-style (600, 28px, 1.25);
+    }    
+}

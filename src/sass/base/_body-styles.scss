@@ -1,0 +1,62 @@
+body {
+    background-color: $background-color;
+    font-family: 'Gilroy', sans-serif;
+    color: $text-color;
+    @include font-style (400, 14px, 1.25);
+    @media screen and (min-width: $tablet) {
+        @include font-style (400, 16px, 1.45);
+    }
+    @media screen and (min-width: $desctop) {
+        @include font-style (400, 20px, 1.45);
+    }
+     
+        
+}
+.container {
+
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        @media screen and (min-width: $mobile) {
+            width: $mobile;
+            
+        }
+
+        @media screen and (min-width: $tablet) {
+            width: $tablet;
+        }
+
+        @media screen and (min-width: $desctop) {
+            width: $desctop;
+        }
+
+    
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
