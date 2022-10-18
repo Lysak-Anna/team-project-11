@@ -29,6 +29,10 @@
   @media screen and (min-width: $tablet) {
     margin-right: 60px;
   }
+
+  @media screen and (min-width: $desctop) {
+    margin-right: 40px;
+  }
 }
 
 .hero-list {
