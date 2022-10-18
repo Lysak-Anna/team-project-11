@@ -405,21 +405,20 @@ img {
   background-color: #191919;
 }
 
-@media screen and (max-width: 767px) {
-  .container {
+@media screen and (max-width: 480px) {
+  .technology.container {
     padding-right: 20px;
     padding-left: 20px;
   }
 }
+@media screen and (min-width: 767px) {
+  .technology.container {
+    display: flex;
+  }
+}
 
 .technology__title {
-  color: #E7E7E7;
-  text-transform: uppercase;
-}
-@media screen and (max-width: 767px) {
-  .technology__title {
-    margin-bottom: 32px;
-  }
+  margin-bottom: 32px;
 }
 
 .technology__subtitle {
