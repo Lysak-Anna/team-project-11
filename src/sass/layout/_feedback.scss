@@ -1,0 +1,249 @@
+.page-poster {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 16px;
+    @media screen and (min-width: $tablet) {
+        padding-right: 60px;
+        padding-left: 60px;
+        margin-bottom: 100px;
+    }
+    @media screen and (min-width: $desctop) {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-bottom: 170px;               
+    }  
+}
+
+
+.feedback--container {
+    margin-left:0;
+    margin-right: 0;
+    width: 100%;
+       
+    @media screen and (min-width: $tablet) {
+    padding-left: 60px;
+    padding-right: 60px;}
+        
+    @media screen and (min-width: $desctop) {
+        display: flex;  
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        padding-left: 190px;
+        padding-right: 190px;                
+    }
+}
+
+.feedback__image {
+    width: 100%;
+    margin-left:0;
+    margin-right: 0;
+}
+
+.feedback__contain {
+    margin-left:0;
+    margin-right: 0;
+    width: 280px;
+    margin-bottom: 40px;
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 52px;
+        width: 445px;
+    }
+    @media screen and (min-width: $desctop) {
+        margin-bottom: 0px;
+           width: 400px;  
+         
+    }     
+}
+.feedback__title {
+    font-family: 'Gilroy';
+    @include font-style (600, 24px, 1.20);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $titles-color;
+    margin-bottom: 32px;
+    @media screen and (min-width: $tablet) {
+    font-size: 30px;
+    }
+    @media screen and (min-width: $desctop) {
+    font-size: 54px;}               
+        
+} 
+
+.feedback__subtitle {
+    font-family: 'Gilroy';
+    @include font-style (400, 16px, 1.25);
+    color: $text-color;
+    @media screen and (min-width: $tablet) {
+        font-size: 20px;
+        color: $titles-color;
+    }    
+        @media screen and (min-width: $desctop) {
+        font-size: 28px;
+    }               
+        
+}
+/* form */
+.form {
+    width: 100%;
+    margin-left:0;
+    margin-right: 0;
+
+    color: $footer-text-color;
+    text-align: center;
+      @media screen and (min-width: $desctop) {
+    width: 510px;}               
+        
+
+}
+
+.form-field {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-family: 'Gilroy';
+    @include font-style (400, 16px, 1.25);
+}
+
+.form-field input {
+    margin-bottom: 32px;
+    padding-bottom: 17px;
+    border-color: transparent;
+        outline: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+
+    color: inherit;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus {
+        color: $text-color;   
+        border-bottom: 2px solid $accent-color;
+        cursor: pointer;
+        outline: transparent;
+        }            
+    }
+
+.form-field.comment textarea {
+        padding-bottom: 60px;
+
+    color: inherit;
+
+
+    border-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+
+    background-color: transparent;
+    resize: none;
+    &:hover,
+    &:focus {
+    color: $text-color;   
+       border-bottom: 2px solid $accent-color;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);        
+    }
+}
+
+.icon {
+    margin: 0;
+    margin-bottom: 1px;
+    position: absolute;
+    z-index: -1;
+}
+
+.policy {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.policy label {
+
+font-family: 'Gilroy';
+  @include font-style (400, 14px, 1.25);
+color: $text-color;
+     
+    @media screen and (min-width: $desctop) {
+    font-size: 16px;
+    line-height: 1.6;}
+
+}
+
+.policy-link {
+    margin-left: 4px;
+    color: inherit;
+    text-decoration: underline;
+    &:focus {
+    margin-left: 4px;
+    color: inherit;
+    outline: 1px solid $accent-color;
+    }
+}
+
+
+.checkbox {
+    appearance: none;
+    position: absolute;
+
+}
+
+.check-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 30px;
+    height: 28px;
+    padding-left: 6px;
+    padding-bottom: 9px;
+    background-color: $background-color;
+    border: 2px solid #E9EDFA;
+    border-width: 2px;
+    border-radius: 2px;
+    margin-right: 29px;
+    vertical-align: middle;
+}
+
+.checkbox:checked+.check-icon {
+    background-color:$background-color;
+    background-size: contain;
+    background-origin: content-box;
+    border-color:  #E9EDFA;
+    z-index: 100;
+}
+
+.button--feedback {
+    display: inline-block;
+    width: 100%;
+    height: 58px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    font-family: 'Gilroy';
+    @include font-style (600, 16px, 1.25);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+ 
+
+   background-color: transparent;
+    border: 1px solid $accent-color; 
+    color: $button-text-color;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);     
+    &:hover,
+    &:focus {
+        border: 1px solid $text-color;
+        color: $accent-color;
+
+    }
+    @media screen and (min-width: $tablet) {
+      width: 294px;
+    }    
+        @media screen and (min-width: $desctop) {
+    min-width: 510px;    
+}
+
+}
