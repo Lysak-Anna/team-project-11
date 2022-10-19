@@ -2,9 +2,9 @@
   background-color: #191919;
 }
 
-.faq__list {
-  list-style: decimal-leading-zero;
-}
+// .faq__list {
+//   list-style: decimal-leading-zero;
+// }
 
 .faq__title {
   color: $titles-color;
@@ -14,8 +14,17 @@
   }
 }
 
+.faq__body-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
 .faq__item {
   border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 24px;
+  position: relative;
 
   @media screen and (max-width: $pre-tablet) {
     margin-bottom: 24px;
@@ -24,9 +33,9 @@
 
 .faq__text {
   color: $text-color;
-  margin-bottom: 24px;
   font-size: 14px;
   line-height: 125%;
+  margin-right: 12px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 37px;
@@ -39,4 +48,44 @@
     font-size: 28px;
     line-height: 125%;
   }
+}
+
+.faq__icon {
+  padding: 0;
+}
+
+.faq__icon-number {
+  margin-right: 16px;
+}
+
+.faq__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: $titles-color;
+  cursor: pointer;
+}
+
+.faq__icon-sign {
+  fill: $titles-color;
+}
+
+.faq__content {
+  margin-top: 10px;
+  opacity: 1;
+  max-height: 100%;
+  transition: visibility 0.3s ease 0s, opacity 0.3s ease 0s, height 0.3s ease 0s;
+}
+
+.faq__item.hide .faq__content {
+  margin-top: 0;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
 }
