@@ -5,52 +5,83 @@ $accent-color: #df3d3a;
 $button-text-color: rgba(255, 255, 255, 0.9);
 $footer-text-color: rgba(255, 255, 255, 0.3);
 
-picture {
-  img {
-  width: 100%;
-  }
-}
-
 .technology {
   padding-bottom: 52px;
   background-color: #191919;
 }
 
 .technology .container {
-  @media screen and (min-width: $pre-tablet) {
+  @media screen and (min-width: $tablet) {
     display: flex;
-    justify-content: space-between;
     padding-left: 0;
     padding-right: 0;
+    margin: 0;
   }
 }
 
-@media screen and (min-width: $pre-tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
   .technology__wrapp {
     padding-left: 60px;
-    width: 340px;
+    margin-right: 60px;
+    width: 354px;
+  }
+}
+
+  @media screen and (min-width: $desctop) {
+  .technology__wrapp {
+    padding-left: 190px;
+    margin-right: 170px;
+    width: 570px;
   }
 }
 
 .technology__title {
+  font-size: 24px;
   margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    font-size: 30px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    font-size: 54px;
+      margin-bottom: 50px;
+  }
 }
 
 .technology__subtitle {
   color: $titles-color;
-  @media screen and (max-width: $pre-tablet) {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
+  font-size: 20px;
+
+  @media screen and (min-width: $desctop) {
+    font-size: 28px;
+        margin-bottom: 20px;
   }
 }
 
 .technology__text {
   color: $text-color;
 
-  @media screen and (max-width: $pre-tablet) {
+  @media screen and (max-width: $tablet) {
     margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    font-size: 20px;
+  }
+}
+
+.technology__wrapper {
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    max-width: 354px;
+  }
+
+    @media screen and (min-width: $desctop) {
+    max-width: 700px;
   }
 }
 
 .technology__picture {
-    padding-right: 0;
+  padding-right: 0;
 }

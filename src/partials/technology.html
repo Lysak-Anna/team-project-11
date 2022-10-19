@@ -10,29 +10,31 @@
     </p>        
     </div>
 
+    <div class="technology__wrapper">
     <picture class="technology__picture">
       <source
         srcset="
           ./images/img-technology@1x-480.png 1x,
           ./images/img-technology@2x-480.png 2x
         "
-        media="(max-width: 767px)"
+        media="(max-width: $pre-tablet)"
       />
       <source
         srcset="
           ./images/img-technology@1x-768.png 1x,
           ./images/img-technology@2x-768.png 2x
         "
-        media="(min-width: 768px)"
+        media="(min-width: $tablet)"
       />
       <source
         srcset="
           ./images/img-technology@1x-1440.png 1x,
           ./images/img-technology@2x-1440.png 2x
         "
-        media="(min-width: 1440px)"
+        media="(min-width: $desctop)"
       />
-      <img src="./images/img-technology@1x-1440.png" alt="Girl in headphones" />
+      <img src="./images/img-technology@1x-1440.png" alt="Girl in headphones"/>
     </picture>
+    </div>
   </div>
 </section>
