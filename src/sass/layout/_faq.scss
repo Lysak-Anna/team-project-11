@@ -2,6 +2,10 @@
   background-color: #191919;
 }
 
+.faq__list {
+  list-style: decimal-leading-zero;
+}
+
 .faq__title {
   color: $titles-color;
   text-transform: uppercase;
@@ -20,8 +24,19 @@
 
 .faq__text {
   color: $text-color;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 125%;
 
-  @media screen and (max-width: $pre-tablet) {
-    margin-bottom: 24px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 37px;
+    font-size: 16px;
+    line-height: 145%;
+  }
+
+  @media screen and (min-width: $desctop) {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 125%;
   }
 }
