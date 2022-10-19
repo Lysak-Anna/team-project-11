@@ -1,16 +1,33 @@
+.reviews {
+    padding-bottom: 80px;
+    @media screen and (min-width: $tablet) {
+        padding-bottom: 100px;
+    }
+    @media screen and (min-width: $desctop) {
+        padding-bottom: 170px;
+    }
+}
 .slider-reviews {
      position: relative;
  }
 
- .reviews-content {
+ .reviews-slide__wrapper {
     margin-top: 32px;
      width: 100%;
  }
- .reviews-content__title {
+ .reviews-slide__title {
      margin-bottom: 16px;
      color: $accent-color;
  }
+ .reviews-slide__text {
+    @media screen and (max-width: $pre-desctop) {
+        margin-bottom: 32px;
+    }
+ }
  .slider-reviews .swiper-pagination {
+    @media screen and (max-width: $pre-desctop) {
+            position: static;
+        }
      position: absolute;
      left: 1070px;
      bottom: 0;
@@ -18,6 +35,7 @@
      width: fit-content;
  }
  .slider-reviews .swiper-pagination-bullet {
+   
      position: relative;
      font-size: 28px;
      line-height: 1.25;
@@ -29,10 +47,11 @@
      width: auto;
      height: auto;
  }
- .slider-reviews .swiper-pagination-bullet:nth-child(-n + 2) {
+  .slider-reviews .swiper-pagination-bullet:nth-child(-n + 2) {
      margin-right: 30px;
  }
  .slider-reviews .swiper-pagination-bullet:nth-child(-n + 2)::after {
+    
      position: absolute;
      content: "";
      right: -19px;
@@ -53,24 +72,43 @@
          padding-left: 60px;
          padding-right: 60px;
     }
+    @media screen and (min-width: $desctop) {
+        padding-left: 0;
+    }
  }
- @media screen and (max-width: 1469px) {
+ @media screen and (min-width: $desctop) {
      iframe {
-         width: 100%;
+         width: 920px;
+         height: 590px;
      }
+ }
+ iframe {
+ @media screen and (max-width: $pre-tablet) {
+        width: 100%;
+        height: 180px;
+    }
+    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+        height: 417px;
+        width: 100%;
+    }
  }
  @media screen and (min-width: $desctop) {
   .slider-title {
       position: absolute;
       left: 1070px;
-     top: 0;
+      top: 0;
   }
    .reviews-slide {
        display: flex;
   }
- .reviews-content {
+ .reviews-slide__wrapper {
      margin-top: 105px;
      margin-left: 150px;
      max-width: 258px;
  }
  }
+@media screen and (max-width: $pre-desctop) {
+    .slider-title {
+       margin-bottom: 32px;
+    }
+}
