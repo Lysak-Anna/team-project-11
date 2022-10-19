@@ -18,20 +18,20 @@ $footer-text-color: rgba(255, 255, 255, 0.3);
   }
 }
 
+.technology__wrapp {
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-  .technology__wrapp {
     padding-left: 60px;
     margin-right: 60px;
-    width: 354px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding-left: 190px;
+    margin-right: 170px;
   }
 }
 
-  @media screen and (min-width: $desctop) {
-  .technology__wrapp {
-    padding-left: 190px;
-    margin-right: 170px;
-    width: 570px;
-  }
+.technology__wrapper {
+  flex-shrink: 0;
 }
 
 .technology__title {
@@ -44,7 +44,7 @@ $footer-text-color: rgba(255, 255, 255, 0.3);
 
   @media screen and (min-width: $desctop) {
     font-size: 54px;
-      margin-bottom: 50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -55,7 +55,7 @@ $footer-text-color: rgba(255, 255, 255, 0.3);
 
   @media screen and (min-width: $desctop) {
     font-size: 28px;
-        margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -71,16 +71,7 @@ $footer-text-color: rgba(255, 255, 255, 0.3);
   }
 }
 
-.technology__wrapper {
-  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-    max-width: 354px;
-  }
-
-    @media screen and (min-width: $desctop) {
-    max-width: 700px;
-  }
-}
-
 .technology__picture {
   padding-right: 0;
+  width: 100%;
 }
