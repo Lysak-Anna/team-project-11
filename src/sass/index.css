@@ -1030,6 +1030,21 @@ img {
   background-color: #191919;
 }
 
+.faq__list {
+  list-style-type: none;
+  counter-reset: section;
+}
+
+.faq__item::before {
+  counter-increment: section;
+  content: "0" counter(section);
+  font-family: "RobotoCondensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  margin-right: 0.5em;
+}
+
 .faq__title {
   color: #E7E7E7;
   text-transform: uppercase;
@@ -1106,7 +1121,7 @@ img {
 }
 
 .faq__content {
-  margin-top: 10px;
+  margin: 0;
   opacity: 1;
   max-height: 100%;
   transition: visibility 0.3s ease 0s, opacity 0.3s ease 0s, height 0.3s ease 0s;
