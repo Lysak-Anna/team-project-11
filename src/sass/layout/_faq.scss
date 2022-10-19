@@ -1,0 +1,27 @@
+.faq {
+  background-color: #191919;
+}
+
+.faq__title {
+  color: $titles-color;
+  text-transform: uppercase;
+  @media screen and (max-width: $pre-tablet) {
+    margin-bottom: 32px;
+  }
+}
+
+.faq__item {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+
+  @media screen and (max-width: $pre-tablet) {
+    margin-bottom: 24px;
+  }
+}
+
+.faq__text {
+  color: $text-color;
+
+  @media screen and (max-width: $pre-tablet) {
+    margin-bottom: 24px;
+  }
+}
