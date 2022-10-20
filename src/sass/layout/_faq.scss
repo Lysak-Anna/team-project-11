@@ -3,9 +3,6 @@
   background-color: #191919;
 
   & .container {
-    @media screen and (min-width: 320px) and (max-width: $pre-tablet) {
-      width: 340px;
-    }
 
     @media screen and (min-width: $desctop) {
       padding-left: 190px;
@@ -52,7 +49,8 @@
 }
 
 .faq__body-item {
-  @include centered-flex(flex, baseline, center);
+  @include centered-flex(flex, baseline, flex-start);
+    position: relative;
 
   @media screen and (min-width: $tablet) {
     justify-content: flex-start;
@@ -83,18 +81,17 @@
 
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     @include font-style(400, 16px, 1.45);
-
-    margin-right: 316px;
   }
 
   @media screen and (min-width: $desctop) {
     @include font-style(600, 28px, 1.25);
-    margin-right: 505px;
   }
 }
 
 .faq__button {
   @include centered-flex(flex, center, center);
+  position: absolute;
+  right: 0;
   padding: 0;
   border: none;
   border-radius: 50%;
