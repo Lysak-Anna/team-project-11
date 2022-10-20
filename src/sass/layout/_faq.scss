@@ -101,6 +101,10 @@
   fill: $titles-color;
   cursor: pointer;
 
+  @media screen and (min-width: $tablet) {
+  right: 16px;
+  }
+
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     align-self: flex-start;
   }
