@@ -1,7 +1,4 @@
-.page-poster {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.feedback__picture {
     padding-right: 20px;
     padding-left: 20px;
     margin-bottom: 16px;
@@ -13,36 +10,27 @@
     @media screen and (min-width: $desctop) {
         padding-right: 0px;
         padding-left: 0px;
+        /*flex-shrink: 0;
+        display: flex;*/
         margin-bottom: 170px;               
     }  
 }
 
-
-.feedback--container {
-    margin-left:0;
-    margin-right: 0;
-    width: 100%;
-       
-    @media screen and (min-width: $tablet) {
-    padding-left: 60px;
-    padding-right: 60px;}
-        
+.feedback__container {     
     @media screen and (min-width: $desctop) {
         display: flex;  
         flex-wrap: wrap;
         justify-content: space-between; 
-        padding-left: 190px;
-        padding-right: 190px;                
     }
 }
 
+
 .feedback__image {
-    width: 100%;
+    display: block;
     margin-left:0;
     margin-right: 0;
 }
-
-.feedback__contain {
+.feedback__contant {
     margin-left:0;
     margin-right: 0;
     width: 280px;
@@ -53,8 +41,7 @@
     }
     @media screen and (min-width: $desctop) {
         margin-bottom: 0px;
-           width: 400px;  
-         
+           width: 400px;
     }     
 }
 .feedback__title {
@@ -68,8 +55,7 @@
     font-size: 30px;
     }
     @media screen and (min-width: $desctop) {
-    font-size: 54px;}               
-        
+    font-size: 54px;}                 
 } 
 
 .feedback__subtitle {
@@ -90,13 +76,10 @@
     width: 100%;
     margin-left:0;
     margin-right: 0;
-
     color: $footer-text-color;
     text-align: center;
-      @media screen and (min-width: $desctop) {
-    width: 510px;}               
-        
-
+    @media screen and (min-width: $desctop) {
+        width: 510px;}               
 }
 
 .form-field {
@@ -111,10 +94,10 @@
     margin-bottom: 32px;
     padding-bottom: 17px;
     border-color: transparent;
-        outline: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    outline: transparent;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 
-    color: inherit;
+    color: $footer-text-color;
     background-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -126,23 +109,21 @@
         }            
     }
 
+    
 .form-field.comment textarea {
-        padding-bottom: 60px;
-
+    padding-bottom: 60px;
     color: inherit;
-
-
     border-color: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     background-color: transparent;
     resize: none;
+    cursor: pointer;    
     &:hover,
     &:focus {
-    color: $text-color;   
-       border-bottom: 2px solid $accent-color;
-    outline: transparent;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);        
+        color: $text-color;   
+        border-bottom: 2px solid $accent-color;
+        outline: transparent;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);        
     }
 }
 
@@ -156,19 +137,15 @@
 .policy {
     margin-top: 40px;
     margin-bottom: 40px;
-
 }
 
 .policy label {
-
-font-family: 'Gilroy';
-  @include font-style (400, 14px, 1.25);
-color: $text-color;
-     
+    font-family: 'Gilroy';
+    @include font-style (400, 14px, 1.25);
+    color: $text-color;
     @media screen and (min-width: $desctop) {
-    font-size: 16px;
-    line-height: 1.6;}
-
+        font-size: 16px;
+        line-height: 1.6;}
 }
 
 .policy-link {
@@ -186,7 +163,6 @@ color: $text-color;
 .checkbox {
     appearance: none;
     position: absolute;
-
 }
 
 .check-icon {
@@ -221,29 +197,25 @@ color: $text-color;
     height: 58px;
     margin-right: auto;
     margin-left: auto;
-    
     font-family: 'Gilroy';
     @include font-style (600, 16px, 1.25);
     letter-spacing: 0.02em;
     text-transform: uppercase;
- 
-
-   background-color: transparent;
+    background-color: transparent;
     border: 1px solid $accent-color; 
     color: $button-text-color;
+    cursor: pointer;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);     
     &:hover,
     &:focus {
         border: 1px solid $text-color;
         color: $accent-color;
-
-    }
+        }
     @media screen and (min-width: $tablet) {
-      width: 294px;
+    width: 294px;
     }    
-        @media screen and (min-width: $desctop) {
+    @media screen and (min-width: $desctop) {
     min-width: 510px;    
-}
-
+    }
 }
