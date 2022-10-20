@@ -1,0 +1,62 @@
+.technology {
+  padding-bottom: 52px;
+  background-color: #191919;
+}
+
+.technology .container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.technology__wrapp {
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    padding-left: 60px;
+    margin-right: 60px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding-left: 190px;
+    margin-right: 170px;
+  }
+}
+
+.technology__wrapper {
+  flex-shrink: 0;
+}
+
+.technology__title {
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 50px;
+  }
+}
+
+.technology__subtitle {
+  margin-bottom: 16px;
+  font-size: 20px;
+
+  @media screen and (min-width: $desctop) {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+.technology__text {
+  color: $text-color;
+
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    font-size: 20px;
+  }
+}
+
+.technology__picture {
+  width: 100%;
+}

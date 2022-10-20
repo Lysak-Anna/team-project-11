@@ -1,0 +1,58 @@
+.ability-section {
+    @include section-paddings(0, 52px);
+    @media screen and (min-width: $tablet) {
+        padding-left: 60px;
+        @include section-paddings(0, 100px);
+    }
+    @media screen and (min-width: $desctop) {
+        padding-left: 190px;
+        @include section-paddings(0, 170px);
+    }
+} 
+.ability__container {
+    @media screen and (min-width: $tablet) {
+        padding-left: 0;
+    }
+}
+.ability__title {
+    margin-bottom: 32px;
+    @media screen and (max-width: $pre-tablet) {
+        width: 150px;
+    }
+    @media screen and (min-width: $desctop) {
+        margin-bottom: 50px;
+    }
+}
+.ability__list {
+    @media screen and (min-width: $desctop) {
+        height: 127px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+        
+    }
+.ability__item {
+display: flex;
+align-items: center;
+@media screen and (max-width: $pre-desctop) {
+&:not(:last-child) {
+    margin-bottom: 16px;
+}
+}
+}
+.ability__item::before {
+    display: flex;
+    margin-right: 24px;
+        content:'';
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: $accent-color;
+    }
+
+.ability__item:not(:nth-child(3n)) {
+    @media screen and (min-width: $desctop) {
+    margin-bottom: 16px;
+    }
+}

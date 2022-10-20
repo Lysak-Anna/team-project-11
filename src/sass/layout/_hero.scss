@@ -1,0 +1,155 @@
+.hero {
+  padding-bottom: 52px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding-bottom: 170px;
+  }
+}
+
+.hero__container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: end;
+    padding: 0;
+  }
+
+  @media screen and (max-width: $pre-tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.hero__wrapper {
+  @media screen and (min-width: $tablet) {
+    margin-right: 60px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-right: 40px;
+  }
+}
+
+.hero-list {
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 105px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 94px;
+  }
+}
+.hero-list__item {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
+  }
+}
+.hero-list__descr {
+  width: 222px;
+
+  &--small {
+    width: 93px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 253px;
+
+    &--small {
+      width: 110px;
+    }
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 321px;
+
+    &--small {
+      width: 150px;
+    }
+  }
+}
+
+.hero-title__wrapper {
+  @media screen and (min-width: $desctop) {
+    padding-left: 132px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 32px;
+
+  width: 234px;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 1;
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: $titles-color;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 40px;
+    font-size: 42px;
+    width: 289px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 86px;
+    font-size: 74px;
+    width: 490px;
+  }
+}
+
+.hero__btn {
+  padding: 19px 113px;
+
+  width: 100%;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: $button-text-color;
+  background-color: $accent-color;
+  border: none;
+  cursor: pointer;
+
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, transparent 50%, #b5302d 50%);
+  transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s,
+    color 0.5s ease 0s, background-color 0.5s ease;
+
+  &:hover,
+  &:focus {
+    background-color: #b5302d;
+    background-position: -100% 100%;
+  }
+
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 19px 120px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding: 22px 166px;
+    font-size: 20px;
+    width: 400px;
+  }
+}
