@@ -54,9 +54,7 @@
 }
 
 .sound-list__title {
-  @media screen and (max-width: 768px) {
-    padding-bottom: 15px;
-  }
+  padding-bottom: 15px;
   @media screen and (min-width: 1440px) {
     padding-bottom: 20px;
   }
