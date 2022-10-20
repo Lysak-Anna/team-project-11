@@ -1,18 +1,23 @@
 .ability-section {
     @include section-paddings(0, 52px);
     @media screen and (min-width: $tablet) {
-        padding-left: 60px;
+        
         @include section-paddings(0, 100px);
     }
     @media screen and (min-width: $desctop) {
-        padding-left: 190px;
+        
         @include section-paddings(0, 170px);
     }
 } 
 .ability__container {
     @media screen and (min-width: $tablet) {
         padding-left: 0;
+        padding-left: 60px;
     }
+         @media screen and (min-width: $desctop) {
+            padding-left: 190px;
+         }
+    
 }
 .ability__title {
     margin-bottom: 32px;
