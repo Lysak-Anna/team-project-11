@@ -174,7 +174,8 @@
   position: absolute;
   appearance: none;
 }
-.form-check__icon {
+.icon-box {
+  position: relative;
   display: block;
   margin-right: 8px;
 
@@ -182,14 +183,18 @@
   height: 28px;
 
   border: 2px solid $text-color;
-  border-radius: 4px;
+  cursor: pointer;
+}
 
-  .user-check__field:checked + & {
-    background-color: $accent-color;
-    // background-image: url('../images/chek-icon.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+.form__icon {
+  display: none;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.form-check__field:checked + .icon-box .form__icon {
+  display: block;
 }
 
 .form-check__desrciption {
@@ -265,7 +270,8 @@
     right: 0;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $button-text-color;
   }
 
@@ -297,7 +303,8 @@
 
 // Inherits from .draw
 .meet {
-  &:hover {
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 
