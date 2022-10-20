@@ -11,17 +11,18 @@
         margin-bottom: 100px;
     }
     @media screen and (min-width: $desctop) {
-        padding-right: 0px;
-        padding-left: 0px;
+        width: 1440px;
+        padding-right: 0;
+        padding-left: 0;
         margin-bottom: 170px;               
     }  
 }
 
 
 .feedback--container {
-    margin-left:0;
-    margin-right: 0;
-    width: 100%;
+    // margin-left:0;
+    // margin-right: 0;
+    // width: 100%;
        
     @media screen and (min-width: $tablet) {
     padding-left: 60px;
@@ -121,7 +122,7 @@
         &:hover, &:focus {
         color: $text-color;   
         border-bottom: 2px solid $accent-color;
-        cursor: pointer;
+        
         outline: transparent;
         }            
     }
@@ -133,7 +134,7 @@
 
 
     border-color: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
     background-color: transparent;
     resize: none;
@@ -156,6 +157,9 @@
 .policy {
     margin-top: 40px;
     margin-bottom: 40px;
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 52px;
+    }
 
 }
 
@@ -164,6 +168,7 @@
 font-family: 'Gilroy';
   @include font-style (400, 14px, 1.25);
 color: $text-color;
+cursor: pointer;
      
     @media screen and (min-width: $desctop) {
     font-size: 16px;
@@ -186,7 +191,7 @@ color: $text-color;
 .checkbox {
     appearance: none;
     position: absolute;
-
+    
 }
 
 .check-icon {
@@ -237,13 +242,98 @@ color: $text-color;
     &:focus {
         border: 1px solid $text-color;
         color: $accent-color;
-
     }
+   
+    
+   
+   
+        
     @media screen and (min-width: $tablet) {
       width: 294px;
     }    
         @media screen and (min-width: $desctop) {
     min-width: 510px;    
 }
+    }
+ 
+// .draw {
+//     transition: color 0.25s;
 
-}
+//     &::before,
+//     &::after {
+//         // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+//         border: 2px solid transparent;
+//         width: 0;
+//         height: 0;
+//     }
+
+//     // This covers the top & right borders (expands right, then down)
+//     &::before {
+//         top: 0;
+//         left: 0;
+//     }
+
+//     // And this the bottom & left borders (expands left, then up)
+//     &::after {
+//         bottom: 0;
+//         right: 0;
+//     }
+
+//     &:hover,
+//     &:focus {
+//         color: $button-text-color;
+//     }
+
+//     // Hover styles
+//     &:hover::before,
+//     &:hover::after {
+//         width: 100%;
+//         height: 100%;
+//     }
+
+//     &:hover::before {
+//         border-top-color: $button-text-color; // Make borders visible
+//         border-right-color: $button-text-color;
+//         transition: width 0.25s ease-out,
+//             // Width expands first
+//             height 0.25s ease-out 0.25s; // And then height
+//     }
+
+//     &:hover::after {
+//         border-bottom-color: $button-text-color; // Make borders visible
+//         border-left-color: $button-text-color;
+//         transition: $button-text-color border-color 0s ease-out 0.5s,
+//             // Wait for ::before to finish before showing border
+//             width 0.25s ease-out 0.5s,
+//             // And then exanding width
+//             height 0.25s ease-out 0.75s; // And finally height
+//     }
+// }
+
+// Inherits from .draw
+// .meet {
+
+//     &:hover,
+//     &:focus {
+//         color: $accent-color;
+//     }
+
+//     // Start ::after in same position as ::before
+//     &::after {
+//         top: 0;
+//         left: 0;
+//     }
+
+//     // Change colors
+//     &:hover::before {
+//         border-top-color: $button-text-color;
+//         border-right-color: $button-text-color;
+//     }
+
+//     &:hover::after {
+//         border-bottom-color: $button-text-color;
+//         border-left-color: $button-text-color;
+//         transition: // Animate height first, then width
+//             height 0.25s ease-out, width 0.25s ease-out 0.25s;
+//     }
+// }

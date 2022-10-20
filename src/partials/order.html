@@ -1,63 +1,118 @@
 <section class="order-section" id="order">
-    <div class="container order-container ">
-        <h2 class="order-title title ">bose nc 700</h2>
-        <div class="order__content-wrap">
-            <input class="radio-input hidden" type="radio" id="radio-1" name="radio" checked>
-            <label class="radio-label dark" for="radio-1">
-                <picture>
-                    <source srcset="./images/img1-order@1x-1440.png 1x, ./images/img1-order@2x-1440.png 2x"
-                        media="(min-width: 1440px)" />
-                    <source srcset="./images/img1-order@1x-768.png 1x, ./images/img1-order@2x-768.png 2x"
-                        media="(min-width: 768px)" />
-                    <source srcset="./images/img1-order@1x-480.png 1x, ./images/img1-order@2x-480.png 2x"
-                        media="(max-width: 767px)" />
-                    <img class="radio-img" src="./images/img1-order@1x-480.png" loading="lazy" alt="Headphones">
-                </picture>
-            </label>
-            <input class="radio-input hidden" type="radio" id="radio-2" name="radio">
-            <label class="radio-label light" for="radio-2">
-                <picture>
-                    <source srcset="./images/img2-order@1x-1440.png 1x, ./images/img2-order@2x-1440.png 2x"
-                        media="(min-width: 1440px)" />
-                    <source srcset="./images/img2-order@1x-768.png 1x, ./images/img2-order@2x-768.png 2x"
-                        media="(min-width: 768px)" />
-                    <source srcset="./images/img2-order@1x-480.png 1x, ./images/img2-order@2x-480.png 2x"
-                        media="(max-width: 767px)" />
-                    <img class="radio-img" src="./images/img2-order@1x-480.png" loading="lazy" alt="Headphones">
-                </picture>
-            </label>
+  <div class="container order-container">
+    <h2 class="order-title title">bose nc 700</h2>
+    <div class="order__content-wrap">
+      <input
+        class="radio-input hidden"
+        type="radio"
+        id="radio-1"
+        name="radio"
+        checked
+      />
+      <label class="radio-label dark" for="radio-1">
+        <picture>
+          <source
+            srcset="
+              ./images/img1-order@1x-1440.png 1x,
+              ./images/img1-order@2x-1440.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              ./images/img1-order@1x-768.png 1x,
+              ./images/img1-order@2x-768.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/img1-order@1x-480.png 1x,
+              ./images/img1-order@2x-480.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="radio-img"
+            src="./images/img1-order@1x-480.png"
+            loading="lazy"
+            alt="Headphones"
+          />
+        </picture>
+      </label>
+      <input
+        class="radio-input hidden"
+        type="radio"
+        id="radio-2"
+        name="radio"
+      />
+      <label class="radio-label light" for="radio-2">
+        <picture>
+          <source
+            srcset="
+              ./images/img2-order@1x-1440.png 1x,
+              ./images/img2-order@2x-1440.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              ./images/img2-order@1x-768.png 1x,
+              ./images/img2-order@2x-768.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/img2-order@1x-480.png 1x,
+              ./images/img2-order@2x-480.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="radio-img"
+            src="./images/img2-order@1x-480.png"
+            loading="lazy"
+            alt="Headphones"
+          />
+        </picture>
+      </label>
 
+      <ul class="order-list">
+        <li class="order-list__item">
+          <button class="order-list__button button" type="button">
+            <span class="order-list__button-text">Availability in stores</span>
+            <svg class="arrow-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="order-list__item">
+          <a href="#characteristics" class="order-list__button button">
+            <!-- <button  type="button"> -->
+            <span class="order-list__button-text">Characteristics</span>
+            <svg class="arrow-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+            <!-- </button> -->
+          </a>
+        </li>
+        <li class="order-list__item">
+          <button class="order-list__button button" type="button">
+            <span class="order-list__button-text"
+              >Payment and delivery methods</span
+            >
+            <svg class="arrow-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
 
-            <ul class="order-list">
-                <li class="order-list__item">
-                    <button class="order-list__button button" type="button" openModalBtn>
-                        <p class="order-list__button-text">Availability in stores</p>
-                        <svg class="arrow-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-arrow"></use>
-                        </svg>
-                    </button>
-                </li>
-                <li class="order-list__item">
-                    <a href="#characteristics">
-                        <button class="order-list__button button" type="button">
-                            <p class="order-list__button-text">Characteristics</p>
-                            <svg class="arrow-icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-arrow"></use>
-                            </svg>
-                        </button>
-                    </a>
-                </li>
-                <li class="order-list__item">
-                    <button class="order-list__button button" type="button">
-                        <p class="order-list__button-text">Payment and delivery methods</p>
-                        <svg class="arrow-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-arrow"></use>
-                        </svg>
-                    </button>
-                </li>
-            </ul>
-
-            <p class="price">14 999 UAH</p>
-            <button class="order-button button"><span class="order-button__text"> Order </span></button>
+      <p class="price">14 999 UAH</p>
+      <button class="order-button button" data-modal-open>
+        <span class="order-button__text"> Order </span>
+      </button>
     </div>
+  </div>
 </section>

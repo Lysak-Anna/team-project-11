@@ -60,7 +60,9 @@
 .faq__body-item {
   @include centered-flex(flex, baseline, flex-start);
   position: relative;
-
+ @media screen and (max-width: $pre-tablet) {
+  padding-right: 50px;
+ }
   @media screen and (min-width: $tablet) {
     justify-content: flex-start;
   }
@@ -73,7 +75,7 @@
   content: '0' counter(section);
 
   @include font-style(400, 20px, 0.7);
-  font-family: 'Roboto Condensed';
+  font-family: 'RobotoCondensed';
 
   @media screen and (min-width: $desctop) {
     @include font-style(400, 28px, 1.25);
@@ -87,9 +89,6 @@
   font-size: 14px;
   line-height: 1.3;
 
-  @media screen and (max-width: 479px) {
-    width: 200px;
-  }
 
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     @include font-style(400, 16px, 1.45);
