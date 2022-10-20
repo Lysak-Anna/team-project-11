@@ -1,0 +1,77 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__btn" type="button" data-modal-close>
+      <svg
+        contenteditable="modal-btn__icon"
+        class="modal__icon"
+        width="30"
+        height="30"
+      >
+        <use href="../src/images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <!-- Form -->
+
+    <form class="form" action="#">
+      <div class="item-wrapper">
+        <div class="form__group field">
+          <input
+            type="text"
+            class="form__field"
+            placeholder="Name"
+            name="name"
+            id="name"
+            required
+          />
+          <label for="name" class="form__label">Your name</label>
+        </div>
+        <div class="form__group field">
+          <input
+            type="email"
+            class="form__field"
+            placeholder="email"
+            name="email"
+            id="email"
+            required
+          />
+          <label for="email" class="form__label">Your e-mail</label>
+        </div>
+        <div class="form__group field">
+          <textarea
+            type="text"
+            class="form__field form__field--pading"
+            placeholder="message"
+            name="message"
+            id="message"
+            required
+            rows="4"
+          ></textarea>
+          <label for="message" class="form__label">Send us a message</label>
+        </div>
+      </div>
+      <!-- Checkbox -->
+
+      <div class="form-check">
+        <label class="form-check__item">
+          <input
+            class="form-check__field"
+            type="checkbox"
+            name="agreement"
+            value="agree"
+          />
+          <span class="form-check__icon">
+            <svg class="form__icon" width="23" height="19">
+              <use href="./images/icons.svg#icon-checkout"></use>
+            </svg>
+          </span>
+          <span class="form-check__desrciption"
+            >I agree to the
+            <a class="form-check__link" href="#">privacy policy</a></span
+          >
+        </label>
+      </div>
+      <button class="form__btn draw meet" type="submit">send</button>
+    </form>
+  </div>
+</div>
