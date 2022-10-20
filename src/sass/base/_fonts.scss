@@ -23,7 +23,4 @@
         url("../fonts/gilroy/Gilroy-Semibold.woff2") format("woff2");
 }
 
-@font-face {
-    font-family: Roboto;
-    src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap);
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
