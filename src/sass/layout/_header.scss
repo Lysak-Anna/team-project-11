@@ -74,7 +74,7 @@
 
 .menu-container {
   &.is-open {
-    display: block;
+    transform: translateY(0);
   }
 
   @media screen and (max-width: $pre-desctop) {
@@ -84,9 +84,10 @@
     width: 100%;
     height: 100vh;
 
-    display: none;
-
     background-color: $background-color;
+
+    transform: translateX(-100%);
+    transition: transform 250ms $cubic-bezier;
   }
 
   @media screen and(min-width:$tablet) and(max-width:$pre-desctop) {
