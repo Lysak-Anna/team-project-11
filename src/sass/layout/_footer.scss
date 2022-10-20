@@ -11,9 +11,6 @@
 }
 
 .footer--container {
-     margin-left:0;
-    margin-right: 0;
-    width: 100%;
 
     text-align: left;    
     @media screen and (min-width: $tablet) {        
@@ -25,7 +22,8 @@
     justify-content: space-between; 
     align-items: flex-end;       
     }
-    @media screen and (min-width: $desctop) {        
+    @media screen and (min-width: $desctop) {  
+          width: 100%;      
         padding-left: 190px;
         padding-right: 80px;
         }

@@ -1,36 +1,23 @@
-<section class="page-poster">
-  <picture>
-    <source
-      srcset="
-        ./images/img-feedback@1x-1440.png 1x,
-        ./images/img-feedback@2x-1440.png 2x
-      "
-      media="(min-width:1440px)"
-    />
-    <source
-      srcset="
-        ./images/img-feedback@1x-768.png 1x,
-        ./images/img-feedback@2x-768.png 2x
-      "
-      media="(min-width:768px)"
-    />
-    <source
-      srcset="
-        ./images/img-feedback@1x-480.png 1x,
-        ./images/img-feedback@2x-480.png 2x
-      "
-      media="(max-width:767px)"
-    />
-    <img
-      class="feedback__image"
-      src="./images/img-feedback@1x-1440.png"
-      loading="lazy"
-      alt="Проект-1"
-    />
-  </picture>
-</section>
+
 <section class="section">
-  <div class="container feedback--container">
+    <div class="container feedback__picture">
+          <picture>
+              <source srcset="
+                ./images/img-feedback@1x-1440.png 1x,
+                ./images/img-feedback@2x-1440.png 2x
+                "media="(min-width:1440px)"/>
+              <source srcset="
+                ./images/img-feedback@1x-768.png 1x,
+                ./images/img-feedback@2x-768.png 2x
+                "media="(min-width:768px)"/>
+              <source srcset="
+                ./images/img-feedback@1x-480.png 1x,
+                ./images/img-feedback@2x-480.png 2x
+              "media="(max-width:767px)"/>
+              <img  src="./images/img-feedback@1x-1440.png" loading="lazy" alt="Girl" />
+        </picture>
+    </div>
+    <div class="container feedback--container">
     <div class="feedback__contain">
       <h2 class="feedback__title">Feedback</h2>
       <p class="feedback__subtitle">
@@ -80,7 +67,7 @@
           <a class="policy-link" href="#" target="_blank">privacy policy</a>
         </label>
       </div>
-      <button class="button button--feedback" type="submit">send</button>
+      <button class="button--feedback draw meet" type="submit">send</button>
     </form>
   </div>
 </section>

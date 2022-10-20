@@ -1,28 +1,6 @@
-.page-poster {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-bottom: 16px;
-    @media screen and (min-width: $tablet) {
-        padding-right: 60px;
-        padding-left: 60px;
-        margin-bottom: 100px;
-    }
-    @media screen and (min-width: $desctop) {
-        padding-right: 0px;
-        padding-left: 0px;
-        margin-bottom: 170px;               
-    }  
-}
 
 
 .feedback--container {
-    margin-left:0;
-    margin-right: 0;
-    width: 100%;
-       
     @media screen and (min-width: $tablet) {
     padding-left: 60px;
     padding-right: 60px;}
@@ -36,11 +14,23 @@
     }
 }
 
-.feedback__image {
-    width: 100%;
-    margin-left:0;
-    margin-right: 0;
+.feedback__picture{
+
+    margin-bottom: 16px;
+    @media screen and (min-width: $tablet) {
+        padding-right: 60px;
+        padding-left: 60px;
+        margin-bottom: 100px;
+    }
+    @media screen and (min-width: $desctop) {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-bottom: 170px;               
+    }  
 }
+
+
 
 .feedback__contain {
     margin-left:0;
@@ -133,7 +123,7 @@
 
 
     border-color: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
     background-color: transparent;
     resize: none;
@@ -219,31 +209,95 @@ color: $text-color;
     display: inline-block;
     width: 100%;
     height: 58px;
+
     margin-right: auto;
     margin-left: auto;
-    cursor: pointer;
+    
+    @media screen and (min-width: $tablet) {
+    width: 294px;
+    }    
+    @media screen and (min-width: $desctop) {
+    min-width: 510px;    
+    }
     font-family: 'Gilroy';
     @include font-style (600, 16px, 1.25);
     letter-spacing: 0.02em;
     text-transform: uppercase;
- 
+     color: $button-text-color;   
+    background: none;
 
-   background-color: transparent;
     border: 1px solid $accent-color; 
-    color: $button-text-color;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);     
-    &:hover,
-    &:focus {
-        border: 1px solid $text-color;
-        color: $accent-color;
+    cursor: pointer;
 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);     
+    position: relative;
+    vertical-align: middle;
+    &::before,
+    &::after {
+        box-sizing: inherit;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
     }
-    @media screen and (min-width: $tablet) {
-      width: 294px;
-    }    
-        @media screen and (min-width: $desctop) {
-    min-width: 510px;    
+
 }
 
+.draw {
+    transition: color 0.25s;
+    &::before,
+    &::after {
+        border: 1px solid transparent;
+        width: 0;
+        height: 0;
+    }
+    &::before {
+        top: 0;
+        left: 0;
+    }
+    &::after {
+        bottom: 0;
+        right: 0;
+    }
+    &:hover {
+        color: $button-text-color;
+    }
+    &:hover::before,
+    &:hover::after {
+        width: 100%;
+        height: 100%;
+    }
+    &:hover::before {
+        border-top-color: $button-text-color;
+        border-right-color: $button-text-color;
+        transition: width 0.25s ease-out,
+        height 0.25s ease-out 0.25s;
+    }
+    &:hover::after {
+        border-bottom-color: $button-text-color;
+        border-left-color: $button-text-color;
+        transition: $button-text-color border-color 0s ease-out 0.5s,
+        width 0.25s ease-out 0.5s,
+        h
+        height 0.25s ease-out 0.75s;
+    }
+}
+.meet {
+  &:hover {
+    color: $accent-color;
+  }
+  &::after {
+    top: 0;
+    left: 0;
+  }
+  &:hover::before {
+    border-top-color: $button-text-color;
+    border-right-color: $button-text-color;
+  }
+  &:hover::after {
+    border-bottom-color: $button-text-color;
+    border-left-color: $button-text-color;
+    transition:
+      height 0.25s ease-out, width 0.25s ease-out 0.25s;
+  }
 }
