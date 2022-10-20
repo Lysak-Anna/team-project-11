@@ -1,0 +1,49 @@
+<section class="page-poster">
+        <picture>
+            <source srcset="./images/img-feedback@1x-1440.png 1x, ./images/img-feedback@2x-1440.png 2x"
+                media="(min-width:1440px)" />
+            <source srcset="./images/img-feedback@1x-768.png 1x, ./images/img-feedback@2x-768.png 2x"
+                media="(min-width:768px)" />
+            <source srcset="./images/img-feedback@1x-480.png 1x, ./images/img-feedback@2x-480.png 2x"
+                media="(max-width:767px)" />
+            <img class="feedback__image" src="./images/img-feedback@1x-1440.png" alt="Проект-1" />
+        </picture>
+</section>
+<section class="section">
+    <div class="container feedback--container">
+
+        <div class="feedback__contain">
+            <h2 class="feedback__title">Feedback</h2>
+            <p class="feedback__subtitle">We'll help you find the right headphones for you.</p>
+        </div>
+        <form class="feedback__form">
+            <div class="form-field">
+                <!--   <label for="user-name">Name</label> -->
+                <input type="text" name="name" id="user-name" placeholder="Your name" autofocus 
+                    pattern="^[a-zA-Z]+\s[a-zA-Z]+$" />
+            </div>
+            <div class="form-field">
+                <!--    <label for="user-email">mail</label> -->
+                <input type="email" name="email" id="user-email" placeholder="Your e-mail" inputmode="email" 
+                required pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" />
+            </div>
+            <div class="form-field comment">
+                <!--    <label for="comment">message</label> -->
+                <textarea name="comment" id="comment" placeholder="Send us a message"></textarea>
+            </div>
+            <div class="policy">
+                <label for="policy">
+                    <input class="checkbox" type="checkbox" name="policy" id="policy" />
+                        <span class="check-icon">
+                       <svg class="icon" width="23" height="19">
+                             <use href="./images/icons.svg#icon-checkout"></use> 
+                        </svg>
+                        </span>
+                    I agree to the
+                    <a class="policy-link" href="#" target="_blank">privacy policy</a>
+                </label>
+            </div>
+            <button class="button button--feedback" type="submit">send</button>
+        </form>
+    </div>
+</section>

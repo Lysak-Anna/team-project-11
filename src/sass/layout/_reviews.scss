@@ -1,0 +1,114 @@
+.reviews {
+    padding-bottom: 80px;
+    @media screen and (min-width: $tablet) {
+        padding-bottom: 100px;
+    }
+    @media screen and (min-width: $desctop) {
+        padding-bottom: 170px;
+    }
+}
+.slider-reviews {
+     position: relative;
+ }
+
+ .reviews-slide__wrapper {
+    margin-top: 32px;
+     width: 100%;
+ }
+ .reviews-slide__title {
+     margin-bottom: 16px;
+     color: $accent-color;
+ }
+ .reviews-slide__text {
+    @media screen and (max-width: $pre-desctop) {
+        margin-bottom: 32px;
+    }
+ }
+ .slider-reviews .swiper-pagination {
+    @media screen and (max-width: $pre-desctop) {
+            position: static;
+        }
+     position: absolute;
+     left: 1070px;
+     bottom: 0;
+     display: flex;
+     width: fit-content;
+ }
+ .slider-reviews .swiper-pagination-bullet {
+   
+     position: relative;
+     font-size: 28px;
+     line-height: 1.25;
+     color: $accent-color;
+     opacity: 0.2;
+     background: transparent;
+     border: 0 solid;
+     border-radius: 0;
+     width: auto;
+     height: auto;
+ }
+  .slider-reviews .swiper-pagination-bullet:nth-child(-n + 2) {
+     margin-right: 30px;
+ }
+ .slider-reviews .swiper-pagination-bullet:nth-child(-n + 2)::after {
+    
+     position: absolute;
+     content: "";
+     right: -19px;
+     top: 50%;
+    transform: translateY(-50%);
+     width: 7px;
+    height: 1px;
+    background-color: $accent-color;
+}
+ .slider-reviews .swiper-pagination-bullet-active::after {
+     opacity: 1;
+ }
+ .slider-reviews .swiper-pagination-bullet-active {
+     opacity: 1;
+ }
+ .reviews-container {
+     @media screen and (min-width: 768px) {
+         padding-left: 60px;
+         padding-right: 60px;
+    }
+    @media screen and (min-width: $desctop) {
+        padding-left: 0;
+    }
+ }
+ @media screen and (min-width: $desctop) {
+     iframe {
+         width: 920px;
+         height: 590px;
+     }
+ }
+ iframe {
+ @media screen and (max-width: $pre-tablet) {
+        width: 100%;
+        height: 180px;
+    }
+    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+        height: 417px;
+        width: 100%;
+    }
+ }
+ @media screen and (min-width: $desctop) {
+  .slider-title {
+      position: absolute;
+      left: 1070px;
+      top: 0;
+  }
+   .reviews-slide {
+       display: flex;
+  }
+ .reviews-slide__wrapper {
+     margin-top: 105px;
+     margin-left: 150px;
+     max-width: 258px;
+ }
+ }
+@media screen and (max-width: $pre-desctop) {
+    .slider-title {
+       margin-bottom: 32px;
+    }
+}

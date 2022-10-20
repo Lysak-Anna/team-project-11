@@ -9,6 +9,7 @@
     font-family: Gilroy;
     font-style: normal;
     font-weight: 400;
+    font-display: fallback;
     src: url("../fonts/gilroy/Gilroy-Regular.woff") format("woff"),
         url("../fonts/gilroy/Gilroy-Regular.woff2") format("woff2");
 }
@@ -17,6 +18,7 @@
     font-family: Gilroy;
     font-style: normal;
     font-weight: 600;
+    font-display: fallback;
     src: url("../fonts/gilroy/Gilroy-Semibold.woff") format("woff"),
         url("../fonts/gilroy/Gilroy-Semibold.woff2") format("woff2");
 }
