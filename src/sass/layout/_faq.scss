@@ -1,8 +1,18 @@
 .faq {
   padding-bottom: 52px;
   background-color: #191919;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: $desctop) {
+    padding-bottom: 170px;
+  }
 
   & .container {
+    @media screen and (min-width: $tablet) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
     @media screen and (min-width: $desctop) {
       padding-left: 190px;
       padding-right: 190px;
@@ -100,8 +110,11 @@
   width: 32px;
   height: 32px;
   background-color: rgba(255, 255, 255, 0.1);
-  fill: $titles-color;
+  color: $titles-color;
   cursor: pointer;
+
+  @include font-style(400, 20px, 0.7);
+  font-family: RobotoCondensed;
 
   @media screen and (max-width: 479px) {
     margin-left: 12px;
@@ -118,23 +131,7 @@
   @media screen and (min-width: $desctop) {
     width: 42px;
     height: 42px;
-  }
-}
-
-.faq__icon {
-  padding: 0;
-}
-
-.faq__icon-number {
-  margin-right: 16px;
-}
-
-.faq__icon-sign {
-  fill: $titles-color;
-
-  @media screen and (min-width: $desctop) {
-    width: 12px;
-    height: 20px;
+    @include font-style(400, 28px, 0.7);
   }
 }
 
