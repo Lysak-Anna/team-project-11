@@ -113,9 +113,9 @@
 .order-list__item {
   border: none;
   &:first-child {
-    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .order-list__button {
@@ -126,6 +126,8 @@
   background-color: $background-color;
   width: 100%;
   cursor: pointer;
+
+ 
 }
 
 .order-list__button-text {
@@ -165,12 +167,18 @@
 
   border: none;
   background-color: $accent-color;
-  color: rgba(255, 255, 255, 0.9);
-  transition: background-color 250mc cubic-bezier(0.4, 0, 0.2, 1);
+    color: $button-text-color;
+  background-size: 200% 100%;
+    background-image: linear-gradient(to right, transparent 50%, #b5302d 50%);
+    transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s,
+      color 0.5s ease 0s, background-color 0.5s ease;
+ 
+  
 
   &:hover,
   &:focus {
     background-color: #b5302d;
+      background-position: -100% 100%;
   }
 
   @media screen and (min-width: 768px) {

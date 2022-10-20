@@ -112,7 +112,7 @@
     padding-bottom: 17px;
     border-color: transparent;
         outline: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
     color: inherit;
     background-color: transparent;
@@ -221,7 +221,7 @@ color: $text-color;
     height: 58px;
     margin-right: auto;
     margin-left: auto;
-    
+    cursor: pointer;
     font-family: 'Gilroy';
     @include font-style (600, 16px, 1.25);
     letter-spacing: 0.02em;
