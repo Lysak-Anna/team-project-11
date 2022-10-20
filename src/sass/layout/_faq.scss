@@ -1,27 +1,151 @@
 .faq {
+  padding-bottom: 52px;
   background-color: #191919;
+
+  & .container {
+    @media screen and (min-width: 320px) and (max-width: $pre-tablet) {
+      width: 340px;
+    }
+
+    @media screen and (min-width: $desctop) {
+      padding-left: 190px;
+      padding-right: 190px;
+    }
+  }
 }
 
 .faq__title {
   color: $titles-color;
   text-transform: uppercase;
-  @media screen and (max-width: $pre-tablet) {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 50px;
   }
 }
 
-.faq__item {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+.faq__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 
-  @media screen and (max-width: $pre-tablet) {
-    margin-bottom: 24px;
+  list-style-type: none;
+  counter-reset: section;
+}
+
+.faq__item {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.faq__body {
+  padding-top: 24px;
+  padding-bottom: 14px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 27px;
+  }
+}
+
+.faq__body-padding {
+  padding-top: 0;
+}
+
+.faq__body-item {
+  @include centered-flex(flex, baseline, center);
+
+  @media screen and (min-width: $tablet) {
+    justify-content: flex-start;
+  }
+}
+
+.faq__body-item::before {
+  margin-right: 16px;
+  color: $titles-color;
+  counter-increment: section;
+  content: '0' counter(section);
+
+  @include font-style(400, 20px, 0.7);
+  font-family: 'Roboto Condensed';
+
+  @media screen and (min-width: $desctop) {
+    @include font-style(400, 28px, 1.25);
+    margin-right: 32px;
   }
 }
 
 .faq__text {
+  margin-right: 12px;
   color: $text-color;
 
-  @media screen and (max-width: $pre-tablet) {
-    margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 1.25;
+
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    @include font-style(400, 16px, 1.45);
+
+    margin-right: 316px;
   }
+
+  @media screen and (min-width: $desctop) {
+    @include font-style(600, 28px, 1.25);
+    margin-right: 505px;
+  }
+}
+
+.faq__button {
+  @include centered-flex(flex, center, center);
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: $titles-color;
+  cursor: pointer;
+
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    align-self: flex-start;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.faq__icon {
+  padding: 0;
+}
+
+.faq__icon-number {
+  margin-right: 16px;
+}
+
+.faq__icon-sign {
+  fill: $titles-color;
+
+  @media screen and (min-width: $desctop) {
+    width: 12px;
+    height: 20px;
+  }
+}
+
+.faq__content {
+  margin-top: 10px;
+  padding-left: 36px;
+  opacity: 1;
+  max-height: 100%;
+  color: $text-color;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $desctop) {
+    padding-left: 60px;
+  }
+}
+
+.faq__item.hide .faq__content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
 }
