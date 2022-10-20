@@ -17,5 +17,8 @@
 <symbol id="icon-vector" viewBox="0 0 31 32">
 <path fill="none" stroke="#df3d3a" style="stroke: var(--color1, #df3d3a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.7826" d="M1.391 30.431l27.826-27.876M29.217 2.554h-27.826M29.217 2.554v27.876"></path>
 </symbol>
+<symbol id="icon-arrow" viewBox="0 0 31 32">
+<path fill="#DF3D3A" stroke="#df3d3a" style="stroke: var(--color1, #df3d3a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.7826" d="M1.391 29.782l27.826-27.826M29.217 1.956h-27.826M29.217 1.956v27.826"></path>
+</symbol>
 </defs>
 </svg>
