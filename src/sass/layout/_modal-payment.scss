@@ -1,0 +1,130 @@
+
+  body.overflow-hidden {
+    overflow: hidden;
+  }
+  
+  .backdrop-payment {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .backdrop-payment.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .modal-payment {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+  }
+  
+  .modal-payment__body {
+    background-color: #191919;
+    max-width: 480px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 75px 45px;
+    @media screen and (min-width: $tablet) {
+      max-width: 768px;
+    }
+  }
+  
+  .modal-payment__close {
+    position: sticky;
+    right: 15px;
+    top: 5px;
+    height: 1px;
+    margin-left: auto;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    border: 0 solid;
+  }
+  
+  .modal-payment__desc {
+    margin: 15px 0;
+    width: 380px;
+    @include font-style (400, 24px, 1.45);
+    @media screen and (min-width: $tablet) {
+      width: 500px;
+    }
+    
+    }
+  
+    .modal-payment__icon {
+      width: 120px;
+      height: 120px;
+      fill: $accent-color;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        fill: $text-color;
+      }
+      @media screen and (min-width: $tablet) {
+        width: 180px;
+      height: 180px;
+      }
+    }
+
+    .modal-payment__wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: $text-color;
+      // text-align: center;
+    }
+    
+    .modal-payment__title {
+      margin-bottom: 5px;
+      @include font-style (600, 30px, 1.45);
+      color: $accent-color;
+    }
+
+    .modal-payment__title {
+      margin-bottom: 5px;
+      @include font-style (600, 30px, 1.45);
+      color: $accent-color;
+    }
+
+    .modal-payment__number {
+      font-family: RobotoCondensed;
+      @include font-style (400, 20px, 1.45);
+      margin-bottom: 20px;
+    }
+
+    .modal-payment__link {
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+      
+    }
+
+    .modal-payment__text {
+      @include font-style (600, 16px, 1.45);
+      margin-bottom: 5px;
+    }
