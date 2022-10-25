@@ -1,0 +1,2 @@
+(()=>{const o={openModalBtn:document.querySelector("[order-modal-open]"),closeModalBtn:document.querySelector("[order-modal-close]"),modal:document.querySelector("[data-modal]")};function e(){o.modal.classList.toggle("is-hidden"),document.body.classList.toggle("scroll-lock")}o.openModalBtn.addEventListener("click",e),o.closeModalBtn.addEventListener("click",e)})();
+//# sourceMappingURL=index.44ff3a8a.js.map
