@@ -2,10 +2,10 @@
   padding-bottom: 52px;
   margin: 0 auto;
   background-color: $background-color;
-  @media  screen and (min-width: $mobile) {
+  @media screen and (min-width: $mobile) {
     width: 480px;
   }
-  @media  screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     width: 768px;
     padding-bottom: 100px;
   }
@@ -15,7 +15,7 @@
     background-image: url(../images/sinus-desktop.svg);
     background-position: 104% 72%;
     background-repeat: no-repeat;
-    background-color: $background-color; 
+    background-color: $background-color;
   }
 }
 
@@ -24,8 +24,7 @@
     padding: 0 60px;
     display: flex;
     flex-shrink: 0;
-    
-  } 
+  }
 }
 
 .guarantees__wrap {
@@ -49,54 +48,51 @@
 .guarantees__subtitle {
   margin-bottom: 16px;
   @media screen and (min-width: $desctop) {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+  }
 }
-}
-
-// .guarantees__descriptions {
-// }
 
 .guarantees__item {
-    &:not(:last-child) {
-      margin-bottom: 61px; 
-      @media screen and (min-width: $tablet) {
-        margin-bottom: 92px;
+  &:not(:last-child) {
+    margin-bottom: 61px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 92px;
       @media screen and (min-width: $desctop) {
         margin-bottom: 106px;
-    }  }  }
+      }
+    }
+  }
 }
 
-.guarantees__item { 
+.guarantees__item {
   position: relative;
   margin-bottom: 32px;
   @media screen and (min-width: $tablet) {
     margin-bottom: 0;
-  @media screen and (min-width: $desctop) {
-    margin-bottom: 0;
-    width: 400px;
+    @media screen and (min-width: $desctop) {
+      margin-bottom: 0;
+      width: 400px;
+    }
   }
-}}
+}
 
-.guarantees__item { 
+.guarantees__item {
   &::before {
-  content: "";
-  position: absolute;
-  top: -37px;
-  left: 0;
-  display: block;
-  width: 13px;
-  border-radius: 50%;
-  height: 13px;
-  background-color: $accent-color;
+    content: '';
+    position: absolute;
+    top: -37px;
+    left: 0;
+    display: block;
+    width: 13px;
+    border-radius: 50%;
+    height: 13px;
+    background-color: $accent-color;
   }
-    }
+}
 
-    .guarantees__picture {
-      @media screen and (min-width: $tablet) {
-         flex-shrink: 0;
-         margin-left: -60px;
-
-
-      }
-      
-    }
+.guarantees__picture {
+  @media screen and (min-width: $tablet) {
+    flex-shrink: 0;
+    margin-left: -60px;
+  }
+}
