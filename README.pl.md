@@ -1,74 +1,47 @@
-**Read in other languages: [Русский](README.md), [Polski](README.pl.md).**
+<div align="center">
 
-# Parcel template
+[![BOSE](./banner.png "BOSE")](https://lysak-anna.github.io/team-project-11/)
+</div>
+<div align="center">
 
-Ten projekt został stworzony przy pomocy Parcel. W celu zapoznania się i skonfigurowania dodatkowych opcji [zobacz dokumentację](https://parceljs.org/)
+[![Language](https://img.shields.io/badge/Language-EN-blue.svg)](README.en.md)
+[![Language](https://img.shields.io/badge/Language-PL-red.svg)](README.pl.md)
+[![Language](https://img.shields.io/badge/Language-UA-yellow.svg)](README.md)
+</div>
+<div align="center">
 
-## Przygotowanie nowego projektu
+### "Nigdy nie przestawaj marzyć.
+### Zawsze marz o tym, co najlepsze i myśl o tym, jak to osiągnąć."
+</div>
+<div align="right">
 
-1. Upewnij się, że na komputerze zainstalowana jest wersja LTS Node.js. [Ściągnij i zainstaluj](https://nodejs.org/en/), jeśli jest taka potrzeba.
-2. Sklonuj to repozytorium.
-3. Zmień nazwę folderu z `parcel-project-template` na nazwę swojego projektu.
-4. Utwórz nowe, puste repozytorium na GitHub.
-5. Otwórz projekt w VSCode, uruchom terminal i zwiąż projekt z repozytorium GitHub [zgodnie z instrukcją](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
-6. Utwórz zależność projektu w terminalu przez polecenie `npm install` .
-7. Włącz tryb edycji, wykonując polecenie `npm start`.
-8. Przejdź w przeglądarce pod adres [http://localhost:1234](http://localhost:1234). Ta strona będzie się automatycznie odświeżać po dokonaniu zmian w plikach projektu.
+###### *Amar Bose jest założycielem firmy*
+</div>
 
-## Pliki i foldery
+## Nazwa projektu i krótki opis:
+- Projekt ten to jednostronicowa strona internetowa poświęcona słuchawkom [**BOSE NC 700**](https://lysak-anna.github.io/team-project-11/). Pełen przegląd historii marki, instrukcja użytkowania słuchawek, szczegółowy opis ich właściwości, a także unikalne cechy słuchawek.
 
-- Wszystkie partiale plików stylów powinny znajdować się w folderze `src/sass` i importować się w pliki stylów stron. Na przykład dla `index.html` plik stylów nazywa się  `index.scss`.
-- Obrazy dodawaj do pliku `src/images`. Moduł zbierający optymalizuje je, ale tylko przy deploymencie wersji produkcyjnej projektu. Wszystko to zachodzi w chmurze, aby nie obciążać twojego komputera, ponieważ na słabszym sprzęcie może to zająć sporo czasu.
+## Instalacja:
+1.   Upewnij się, że masz zainstalowaną [wersję LTS Node.js](https://nodejs.org/en) na swoim komputerze. W razie potrzeby pobierz i zainstaluj ją.
+2.   Skopiuj to repozytorium.
+3.    Otwórz VSCode, uruchom terminal i sklonuj je za pomocą polecenia `git clone <link>`.
+4.    Zainstaluj zależności projektu w terminalu za pomocą polecenia npm install.
+5.    Uruchom serwer deweloperski, uruchamiając polecenie npm start.
+6.    Przejdź do strony http://localhost:1234 w przeglądarce. Strona ta zostanie automatycznie przeładowana po zapisaniu zmian w plikach projektu.
 
-## Deployment
+## Funkcjonalność:
+- Strona zawiera elementy interaktywne w postaci okien modalnych. Przyciski "ORDER", "Payment and delivery methods", "Availability in stores" aktywne, są one powielane w sekcji "stopka".
 
-Aby skonfigurować deployment projektu należy wykonać kilka dodatkowych kroków konfigurowania twojego repozytorium. Wejdź w zakładkę `Settings` i w podsekcji `Actions` wybierz punkt `General`.
+## Technologie:
+- W projekcie wykorzystano takie technologie jak: HTML, CSS, JavaScript, metodologia BEM, preprocesor SASS/SCSS, układ adaptacyjny, grafika adaptacyjna, pozycjonowanie elementów zostało zaimplementowane przy użyciu Flexible Box Layout (Flexbox) ze względu na jego elastyczność, efekty dekoracyjne, animacje, walidacja formularzy.
 
+## Współtwórcy:
+- [***Anna Lysak***](https://github.com/Lysak-Anna) - Team Lead
+- [***Oleksandr Kurdiiash***](https://github.com/Petrushka26) - Scrum Master, Frontend developer
+- [***Olha Suchok***](https://github.com/OlhaSuchok) - Frontend developer
+- [***Andrii Chertkov***](https://github.com/Chert17) - Frontend developer
+- [***Andrii Pasitskyi***](https://github.com/AndriiPas1999) - Frontend developer
+- [***Daniila Saenko***](https://github.com/DaniilaSaenko) - Frontend developer
+- [***Denys Yefimov***](https://github.com/EfirNet) - Frontend developer
 
-![GitHub actions settings](./assets/actions-config-step-1.png)
-
-Przejdź do ostatniej sekcji, w której upewnij się, że wybrane opcje są takie same jak na następnym obrazku i kliknij `Save`. Bez tych ustawień w module zbierającym będzie zbyt mało pozwoleń dla automatyzacji procesu deploymentu.
-
-![GitHub actions settings](./assets/actions-config-step-2.png)
-
-Wersja produkcyjna projektu będzie automatycznie gromadzić się i deployować na GitHub Pages w gałęzi `gh-pages` za każdym razem, gdy aktualizuje się gałąź `main`. Na przykład po bezpośrednim pushu lub przyjętym pull requeście. W tym celu niezbędne jest, aby w pliku `package.json` wyedytować pole `homepage` i skrypt `build`, zamieniając `your_username` i `your_repo_name` na swoje nazwy i wysłać zmiany na GitHub.
-
-```json
-"homepage": "https://your_username.github.io/your_repo_name/",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /your_repo_name/"
-},
-```
-
-Dalej należy wejść w ustawienia repozytorium GitHub (`Settings` > `Pages`) i wystawić dystrybucję wersji produkcyjnej z folderu `/root` gałęzi `gh-pages`, jeśli nie zrobiło się to automatycznie.
-
-![GitHub Pages settings](./assets/repo-settings.png)
-
-### Status deploymentu
-
-Status deploymentu ostatniego commitu wyświetla się na ikonie obok jego identyfikatora.
-
-- ** Żółty kolor** - wykonuje się zbudowanie i deployment projektu.
-- ** Zielony kolor** - deployment zakończył się sukcesem.
-- ** Czerwony kolor** - w czasie lintingu, budowania lub deplymentu pojawił się błąd.
-
-Więcej informacji o statusie można zobaczyć klikając na ikonkę i w wyskakującym oknie przejść do odnośnika `Details`.
-
-![Deployment status](./assets/status.png)
-
-### Działająca strona
-
-Po jakimś czasie, zazwyczaj kilku minut, działającą stronę będzie można zobaczyć pod adresem wskazanym w wyedytowanej właściwości `homepage`. Na przykład tu znajduje się odnośnik do działającej strony dla tego repozytorium
- [https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
-
-
-Jeżeli otwiera się pusta strona, upewnij się, że w zakładce `Console` nie ma błędów związanych z nieprawidłowymi ścieżkami do plików projektu CSS i JS (**404**). Najprawdopodobniej wprowadzona została nieprawidłowa wartość właściwości `homepage` lub skryptu `build` w pliku `package.json`.
-
-## Jak to działa
-
-![How it works](./assets/how-it-works.png)
-
-1. Po każdym pushu w gałęzi `main` repozytorium GitHub, włącza się specjalny skrypt (GitHub Action) z pliku `.github/workflows/deploy.yml`.
-2. Wszystkie pliki repozytorium kopiują się na serwer, gdzie projekt inicjalizuje się i buduje przed deploymentem.
-3. Jeżeli wszystkie kroki zakończyły się sukcesem, zbudowana wersja produkcyjna plików projektu wysyła się w gałąź `gh-pages`. W przeciwnym razie, w logu wykonania skryptu wskazane zostanie, w czym jest problem.
-
+### Jeśli masz jakieś pomysły lub sugestie dotyczące współpracy, zachęcamy do kontaktu z deweloperem, odwiedzając jego profil na GitHubie i klikając na jego imię. Z przyjemnością wysłuchają cię i będą współpracować, aby osiągnąć wspólny cel.
