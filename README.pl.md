@@ -25,15 +25,15 @@
 1.   Upewnij się, że masz zainstalowaną [wersję LTS Node.js](https://nodejs.org/en) na swoim komputerze. W razie potrzeby pobierz i zainstaluj ją.
 2.   Skopiuj to repozytorium.
 3.    Otwórz VSCode, uruchom terminal i sklonuj je za pomocą polecenia `git clone <link>`.
-4.    Zainstaluj zależności projektu w terminalu za pomocą polecenia npm install.
-5.    Uruchom serwer deweloperski, uruchamiając polecenie npm start.
+4.    Zainstaluj zależności projektu w terminalu za pomocą polecenia `npm install`.
+5.    Uruchom serwer deweloperski, uruchamiając polecenie `npm start`.
 6.    Przejdź do strony http://localhost:1234 w przeglądarce. Strona ta zostanie automatycznie przeładowana po zapisaniu zmian w plikach projektu.
 
 ## Funkcjonalność:
 - Strona zawiera elementy interaktywne w postaci okien modalnych. Przyciski "ORDER", "Payment and delivery methods", "Availability in stores" aktywne, są one powielane w sekcji "stopka".
 
 ## Technologie:
-- W projekcie wykorzystano takie technologie jak: HTML, CSS, JavaScript, metodologia BEM, preprocesor SASS/SCSS, układ adaptacyjny, grafika adaptacyjna, pozycjonowanie elementów zostało zaimplementowane przy użyciu Flexible Box Layout (Flexbox) ze względu na jego elastyczność, efekty dekoracyjne, animacje, walidacja formularzy.
+- Projekt został zbudowany przy użyciu programu Parcel. Wykorzystano następujące technologie: HTML, CSS, JavaScript, metodologia BEM, preprocesor SASS/SCSS, responsywny layout, responsywna grafika, pozycjonowanie elementów zostało zrealizowane przy użyciu Flexible Box Layout (Flexbox) ze względu na jego elastyczność, efekty dekoracyjne, animacje oraz walidację formularzy.
 
 ## Współtwórcy:
 - [***Anna Lysak***](https://github.com/Lysak-Anna) - Team Lead
@@ -44,4 +44,4 @@
 - [***Daniila Saenko***](https://github.com/DaniilaSaenko) - Frontend developer
 - [***Denys Yefimov***](https://github.com/EfirNet) - Frontend developer
 
-### Jeśli masz jakieś pomysły lub sugestie dotyczące współpracy, zachęcamy do kontaktu z deweloperem, odwiedzając jego profil na GitHubie i klikając na jego imię. Z przyjemnością wysłuchają cię i będą współpracować, aby osiągnąć wspólny cel.
+### Jeśli masz jakieś pomysły lub sugestie dotyczące współpracy, zachęcamy do kontaktu z deweloperem, odwiedzając jego profil na GitHubie i klikając na jego imię. Każdy z nas chętnie Cię wysłucha i będzie współpracował, aby osiągnąć wspólny cel.
