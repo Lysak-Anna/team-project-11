@@ -4,9 +4,9 @@
   "description": "",
   "homepage": "https://efirnet.github.io/Bose-NC-700--team-",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Bose-NC-700--team-/"
-  },
+  "start": "parcel src/*.html",
+  "build": "parcel build src/*.html --public-url /"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EfirNet/Bose-NC-700--team-.git"
