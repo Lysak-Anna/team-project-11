@@ -1,22 +1,19 @@
 {
-  "name": "parcel-project-template",
+  "name": "bose-nc700-team",
   "version": "2.0.0",
-  "description": "",
-  "homepage": "https://Lysak-Anna.github.io/team-project-11",
+  "description": "Team learning project on creating a one-page website for BOSE headphones using HTML, SCSS and Javascript technologies",
+  "homepage": "https://efirnet.github.io/bose-nc700-team",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-project-11/"
+    "build": "parcel build src/*.html --public-url /"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/EfirNet/bose-nc700-team.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Flex Generation Team",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
-  },
   "dependencies": {
     "caniuse-lite": "^1.0.30001512",
     "modern-normalize": "^2.0.0",
