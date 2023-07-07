@@ -12,7 +12,7 @@
     "url": "git+https://github.com/EfirNet/bose-nc700-team.git"
   },
   "keywords": [],
-  "author": "Yefimov Denys",
+  "author": "Flex Generation Team",
   "license": "ISC",
   "dependencies": {
     "caniuse-lite": "^1.0.30001512",
