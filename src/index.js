@@ -1,4 +1,5 @@
 import Swiper from 'swiper';
+
 import './js/content.js';
 import './js/menu.js';
 import './js/modalBose.js';
